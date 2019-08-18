@@ -3,7 +3,7 @@
 Aplicación para la georreferenciación de algunas direcciones utilizando *R* y *leaflet*. 
 ---
 
-La aplicación se encuentra disponible [aquí.](https://juapatral.shinyapps.io/MAPp/)
+La aplicación se encuentra disponible [aquí](https://juapatral.shinyapps.io/MAPp/) y el programador puede encontrar información útil [aquí.](https://github.com/Juapatral/mapp/blob/master/info-programmer.md)
 
 ## **Mapa del sitio**
 
@@ -34,7 +34,7 @@ Los mapas de comunas y barrios de Medellín están disponibles en su [sitio ofic
 ---
 <font size = "1">
 
-Version *MAPp*: 2019.08.18
+*MAPp* Version: 2019.08.18
 
 Maintained by: juapatral
 
