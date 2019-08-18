@@ -11,7 +11,7 @@ Georreferenciación de algunas direcciones utilizando *R* y *leaflet*.
 
 * En *`Mapa por barrio`* encontrará un mapa interactivo de Medellín con la información por barrios.
 
-* En *`Top`* encontrará unas tablas con las comunas y barrios donde más hay información y donde hay menos información, donde puede elegir entre mostrar las primeras 5, 10, 25, 50 o 100 y organizar alfabéticamente por nombre de comuna o barrio, u organizar por cantidad de observaciones. 
+* En *`Top`* encontrará unas tablas con las comunas y barrios donde más hay información y donde hay menos información, donde puede elegir entre mostrar las primeras 10, 25, 50 o 100 y organizar alfabéticamente por nombre de comuna o barrio, u organizar por cantidad de observaciones. 
 
 ## **Explicación de los mapas**
 
@@ -28,7 +28,6 @@ La georreferenciación se hizo posible a través de *Google Maps* y la [*API*](h
 Los mapas de comunas y barrios de Medellín están disponibles en su [sitio oficial.](https://geomedellin-m-medellin.opendata.arcgis.com/)
 
 ***Nota:*** no todas las observaciones que son de Medellín se pudieron asociar a un barrio o comuna, por lo que se requiere un trabajo manual para hacerlo.
-
 ---
 <font size = "1">
 

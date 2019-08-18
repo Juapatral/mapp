@@ -9,7 +9,7 @@ library(leaflet, quietly = T)
 library(markdown, quietly = T)
 library(shinythemes, quietly = T)
 
-### ---- inicio ui ----
+### ---- ui ----
 
 ui <- navbarPage("MAPp", theme = shinytheme("simplex"),
 
@@ -25,7 +25,7 @@ ui <- navbarPage("MAPp", theme = shinytheme("simplex"),
         tabPanel("Comuna",
                  
                  # titulo del mapa
-                 titlePanel("Mapa por comuna"),
+                 titlePanel("Mapa por comuna", windowTitle = "MAPp"),
                  
                 # mainPanel(
                      
@@ -47,7 +47,7 @@ ui <- navbarPage("MAPp", theme = shinytheme("simplex"),
                 #mainPanel(
 
                          # titulo del mapa
-                         titlePanel("Mapa por barrio"),
+                         titlePanel("Mapa por barrio", windowTitle = "MAPp"),
 
                          # texto
                          selectInput(inputId = "marcadores_br",
@@ -64,7 +64,7 @@ ui <- navbarPage("MAPp", theme = shinytheme("simplex"),
         
         tabPanel("Top",
                  
-                 titlePanel("Principales"),
+                 titlePanel("Principales", windowTitle = "MAPp"),
                  
                  #mainPanel(
                      
@@ -86,6 +86,7 @@ ui <- navbarPage("MAPp", theme = shinytheme("simplex"),
                  )
         )
     #)
+
 
 
 
@@ -330,7 +331,11 @@ server <- function(input, output) {
     })
     
     # crear tabla de comuna
-    output$tabla_cm <- renderDataTable({
+    output$tabla_cm <- renderDataTable(
+        
+        # elegir los primeros 10
+        options = list(pageLength = 10), 
+        {
         
         # crear dataframe
         com10 <- select(as.data.frame(comuna), "NOMBRE", "COMUNA") %>%
@@ -345,14 +350,16 @@ server <- function(input, output) {
         as.data.frame(com10) 
         
         
-    }, 
+    })
     
-    # elegir los primeros 10
-    options = list(pageLength = 10, width = 4)
-    )
+    
     
     # crear tabla de barrio
-    output$tabla_br <- renderDataTable({
+    output$tabla_br <- renderDataTable(
+        
+        # elegir los primeros 10
+        options = list(pageLength = 10),
+        {
         
         # crear dataframe
         bar10 <- select(as.data.frame(barrio), 
@@ -368,11 +375,7 @@ server <- function(input, output) {
         as.data.frame(bar10)
         
         
-    }, 
-    
-    # elegir los primeros 10
-    options = list(pageLength = 10, width = 4)
-    )
+    })
     
 }
 
