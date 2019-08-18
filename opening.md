@@ -36,6 +36,4 @@ Los mapas de comunas y barrios de Medellín están disponibles en su [sitio ofic
 
 Maintained by: juapatral
 
-More info [here](https://github.com/Juapatral/mapp/blob/master/info-programmer.md)
-
 </font>

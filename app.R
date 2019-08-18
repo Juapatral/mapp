@@ -11,7 +11,7 @@ library(shinythemes, quietly = T)
 
 ### ---- ui ----
 
-ui <- navbarPage("MAPp", theme = shinytheme("simplex"),
+ui <- navbarPage("MAPp", theme = shinytheme("flatly"),
 
     ### ---- inicio pesanias ----
     
