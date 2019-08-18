@@ -1,6 +1,10 @@
 ## **Información de utilidad para el programador**
 
-***Licencia***
+### **Aplicación**
+
+La aplicación se encuentra disponible [aquí.](https://juapatral.shinyapps.io/MAPp/)
+
+### **Licencia**
 
 Esta aplicación cuenta con el licenciamiento [AGLP versión 3](https://www.gnu.org/licenses/agpl-3.0.en.html) mientras se encuentre disponible en la plataforma de [*Shiny*.](https://shiny.rstudio.com/) 
 

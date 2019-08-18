@@ -1,6 +1,6 @@
 # ***MAPp***
 
-Georreferenciación de algunas direcciones utilizando *R* y *leaflet*. 
+Georreferenciación de algunas direcciones utilizando *R* y *LeafLet*. 
 ---
 
 ## **Mapa del sitio**
@@ -28,11 +28,14 @@ La georreferenciación se hizo posible a través de *Google Maps* y la [*API*](h
 Los mapas de comunas y barrios de Medellín están disponibles en su [sitio oficial.](https://geomedellin-m-medellin.opendata.arcgis.com/)
 
 ***Nota:*** no todas las observaciones que son de Medellín se pudieron asociar a un barrio o comuna, por lo que se requiere un trabajo manual para hacerlo.
+
 ---
 <font size = "1">
 
-Version *MAPp*: 2019.08.18
+*MAPp* Version: 2019.08.18
 
 Maintained by: juapatral
+
+More info [here](https://github.com/Juapatral/mapp/blob/master/info-programmer.md)
 
 </font>
